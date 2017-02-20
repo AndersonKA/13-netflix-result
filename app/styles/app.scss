@@ -3,6 +3,7 @@
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome';
+
 $c-purple: #7d54f1;
 $c-white: #fff;
 $c-background: #e3e3e3;
@@ -13,36 +14,33 @@ $c-jamaica1: #198af1;
 
 .search {
   display: flex;
+
+  &-field {
+    flex-grow: 1;
+    line-height: 1rem;
+  }
+
+  &-button {
+    border: 0;
+    background: $c-purple;
+    color: $c-white;
+    line-height: 1rem;
+  }
 }
 
-.search-field {
-  line-height: 1rem;
-  flex-grow: 1;
-
-}
-
-.search-button {
-  border: 0;
-  background: $c-purple;
-  color: $c-white;
-  line-height: 1rem;
-}
 
 .main {
-  margin: 1rem;
+  padding: 2rem;
+  background: $c-background;
 }
 
 .upper {
-  overflow: auto;
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
-  background: $c-jamaica1;
-
 
   &-pic {
     max-width: 20rem;
     max-height: 15rem;
-    float: right;
-
-
   }
 }
