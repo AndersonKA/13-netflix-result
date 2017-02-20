@@ -1,9 +1,5 @@
 export default {
-  fillInResult(element, data) {
-
-  }
 };
-
 // Create a module fill-in-result.js that exports a function
 // accepts two arguments
 // element to fill in
