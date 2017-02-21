@@ -4,31 +4,32 @@
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome';
 
-
 $c-purple: #7d54f1;
 $c-white: #fff;
 $c-background: #e3e3e3;
 $c-jamaica1: #198af1;
 $c-black: #040404;
-
 @import 'box-sizing';
 @import 'resets';
 
 .section {
   height: 100vh;
   margin: 0 auto;
-  padding: 2rem;
   background: $c-black;
 }
 
 .container {
-  justify-content: center;
-  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .main {
+  max-width: 65rem;
   padding: 2rem;
   background: $c-background;
+
 }
 
 .search {
@@ -47,8 +48,6 @@ $c-black: #040404;
   }
 }
 
-
-
 .upper {
   display: flex;
   justify-content: space-between;
@@ -56,6 +55,11 @@ $c-black: #040404;
   &-pic {
     max-width: 20rem;
     max-height: 15rem;
+    object-fit: contain;
+  }
+
+  &-rating {
+    font-weight: bold;
   }
 }
 
