@@ -2,7 +2,7 @@ import 'whatwg-fetch';
 import fillInResult from './fill-in-results';
 
 // * [ ] Create Variables for the search form, search input, and search result
-const searchForm = document.querySelector('.search-button');
+const searchButton = document.querySelector('.search-button');
 const searchInput = document.querySelector('.search-field');
 const searchResult = document.querySelector('.main');
 
@@ -17,6 +17,7 @@ function fillInMovie(test) {
   });
 }
 // when the search button is clicked on
-searchForm.addEventListener('click', () => {
+searchButton.addEventListener('click', () => {
+  // value that was in the search field
   fillInMovie(searchInput.value);
 });

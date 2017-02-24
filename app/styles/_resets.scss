@@ -2,9 +2,9 @@ body {
   display: flex;
   flex-direction: row;
   margin: 0;
+  background: $c-black;
   font-family: sans-serif;
   font-size: 12px;
-  background: $c-black;
 }
 
 ul {
