@@ -1,6 +1,72 @@
 // @import 'yoga';
 // @import 'normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+@import 'font-awesome';
+
+$c-purple: #7d54f1;
+$c-white: #fff;
+$c-background: #e3e3e3;
+$c-jamaica1: #198af1;
+$c-black: #040404;
 @import 'box-sizing';
+@import 'resets';
+
+.section {
+  height: 100vh;
+  margin: 0 auto;
+  background: $c-black;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main {
+  max-width: 65rem;
+  padding: 2rem;
+  background: $c-background;
+}
+
+.search {
+  display: flex;
+
+
+  &-field {
+    flex-grow: 1;
+    border: 0;
+    outline: none;
+    line-height: 1rem;
+  }
+
+  &-button {
+    border: 0;
+    outline: none;
+    background: $c-purple;
+    color: $c-white;
+    line-height: 1rem;
+  }
+}
+
+.upper {
+  display: flex;
+  justify-content: space-between;
+
+  &-pic {
+    max-width: 20rem;
+    max-height: 15rem;
+    object-fit: contain;
+  }
+
+  &-rating {
+    font-weight: bold;
+  }
+}
+
+.lower-summary__words {
+  display: flex;
+  flex-wrap: wrap;
+}
